@@ -3,7 +3,6 @@ package com.example.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -62,12 +61,6 @@ public class LessonController {
 	    public String formTest(SampleForm sampleForm, Model model) {
 	        model.addAttribute("sampleForm", sampleForm);
 	        return "lesson/form_test";
-	    }
-	    
-	    @GetMapping("/form_test")
-	    public String formTest(@ModelAttribute SampleForm sampleform) {
-	    	return "lesson/form_test";
-	    	
 	    }
 	 
 	   // @GetMapping("/")
