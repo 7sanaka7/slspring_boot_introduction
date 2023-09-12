@@ -70,5 +70,12 @@ public class EmployeeController {
         // 一覧ページにリダイレクトします
         return "redirect:/employee/list";
     }
+    @GetMapping("/delete/{employeeId}")
+    public String deleteEmployee(@PathVariable Integer employeeId) {
+        // データを削除します
+        this.employeeService.delete(employeeId);
+        // 一覧ページにリダイレクトします
+        return "redirect:/employee/list";
+    }
 
 }

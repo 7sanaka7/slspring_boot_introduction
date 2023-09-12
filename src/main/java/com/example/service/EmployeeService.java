@@ -10,7 +10,7 @@ import com.example.entity.Employee;
 import com.example.repository.EmployeeRepository;
 
 @Service
-public class EmploreeService {
+public class EmployeeService {
 	
 	  // Repositoryをフィールドに用意する
     private final EmployeeRepository employeeRepository;
