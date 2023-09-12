@@ -10,7 +10,6 @@ import com.example.entity.Employee;
 
 
 @Repository
-
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
 	// 名前が一致した人をすべて取得する
