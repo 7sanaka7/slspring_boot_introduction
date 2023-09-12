@@ -62,9 +62,7 @@ public class LessonController {
 	        model.addAttribute("sampleForm", sampleForm);
 	        return "lesson/form_test";
 	    }
-	    
-	   
-	 
+
 	   // @GetMapping("/")
 	 // name=太郎のようにGETパラメータに指定しないとエラーになります
 	// public String test(@RequestParam("name") String name) {
