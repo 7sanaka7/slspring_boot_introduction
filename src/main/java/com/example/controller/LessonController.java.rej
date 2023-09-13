@@ -1,0 +1,9 @@
+diff a/src/main/java/com/example/controller/LessonController.java b/src/main/java/com/example/controller/LessonController.java	(rejected hunks)
+@@ -62,6 +62,7 @@
+ 	        model.addAttribute("sampleForm", sampleForm);
+ 	        return "lesson/form_test";
+ 	    }
++
+ 	   // @GetMapping("/")
+ 	 // name=太郎のようにGETパラメータに指定しないとエラーになります
+ 	// public String test(@RequestParam("name") String name) {
